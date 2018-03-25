@@ -18,12 +18,14 @@ public class Student {
     public int rokStud;
 
     public Student(String imie, String nazwisko, int nrIndeksu, String nazwaSpec, int rokStud) {
-        this.imie = "";
-        this.nazwisko = "";
-        this.nrIndeksu = 0;
-        this.nazwaSpec = "";
-        this.rokStud = 0;
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.nrIndeksu = nrIndeksu;
+        this.nazwaSpec = nazwaSpec;
+        this.rokStud = rokStud;
     }
+
+   
     
     
     
