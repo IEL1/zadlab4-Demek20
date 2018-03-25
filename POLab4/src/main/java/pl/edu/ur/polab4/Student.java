@@ -5,6 +5,8 @@
  */
 package pl.edu.ur.polab4;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Kazik
@@ -23,6 +25,10 @@ public class Student {
         this.nrIndeksu = nrIndeksu;
         this.nazwaSpec = nazwaSpec;
         this.rokStud = rokStud;
+    }
+
+    Student(Scanner imie, Scanner nazwisko, Scanner numerIndeksu, Scanner nazwaSpecjalnosci, Scanner rokStudiow) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
    

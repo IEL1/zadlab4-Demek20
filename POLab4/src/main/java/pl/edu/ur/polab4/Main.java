@@ -1,6 +1,7 @@
 package pl.edu.ur.polab4;
 
 import java.util.Scanner;
+import pl.edu.ur.polab4.newpackage.Studenci;
 
 public class Main {
 
@@ -116,7 +117,96 @@ public class Main {
     }
         break;
         
-            
+            case 5:
+            {
+                Studenci studenci = new Studenci();
+                
+                Boolean petla = true;
+                while(petla){
+                System.out.println("Zarzadzanie tablica studentow");
+                System.out.println("1 - utworz tablice");
+                System.out.println("2 - wprowadz dane studenta");
+                System.out.println("3 - edycja danych studenta");
+                System.out.println("4 - usuniecie danych studenta");
+                System.out.println("5 - wyswietl dane studenta");
+                System.out.println("6 - wyswietl dane wszystkich studentow");
+                System.out.println("7 - wyswietl dane z zakresu");
+                System.out.println("8 - wyjscie");
+                Scanner nrOpcji = new Scanner (System.in);
+                int nr_opcji = nrOpcji.nextInt();
+                
+                switch(nr_opcji){
+                    case 1:
+                        studenci.Inicjuj();
+                        break;
+                    case 2:
+                        System.out.println("Podaj indeks");
+                        Scanner indeks = new Scanner(System.in);
+                        int j = indeks.nextInt();
+                        System.out.println("Podaj imie");
+                        Scanner imie = new Scanner(System.in);
+                        System.out.println("Podaj nazwisko");
+                        Scanner nazwisko = new Scanner(System.in);
+                        System.out.println("Podaj nr indeksu");
+                        Scanner numerIndeksu = new Scanner(System.in);
+                        System.out.println("Podaj nazwe specjalnosci");
+                        Scanner nazwaSpecjalnosci = new Scanner(System.in);
+                        System.out.println("Podaj rok studiow");
+                        Scanner rokStudiow = new Scanner(System.in);
+                        studenci.DodajStudenta(j, new Student(imie, nazwisko, numerIndeksu, nazwaSpecjalnosci, rokStudiow));
+                        break;
+                    case 3:
+                        System.out.println("Podaj indeks");
+                        Scanner in = new Scanner(System.in);
+                        System.out.println("Podaj imie");
+                        Scanner imie1 = new Scanner(System.in);
+                        System.out.println("Podaj nazwisko");
+                        Scanner nazwisko1 = new Scanner(System.in);
+                        System.out.println("Podaj nr indeksu");
+                        Scanner numerIndeksu1 = new Scanner(System.in);
+                        System.out.println("Podaj nazwe specjalnosci");
+                        Scanner nazwaSpecjalnosci1 = new Scanner(System.in);
+                        System.out.println("Podaj rok studiow");
+                        Scanner rokStudiow1 = new Scanner(System.in);
+                        studenci.EdycjaDanych(in, new Student(imie1, nazwisko1, numerIndeksu1, nazwaSpecjalnosci1, rokStudiow1));
+                        break;
+                        
+                    case 4:
+                        System.out.println("Podaj indeks");
+                        Scanner indeks1 = new Scanner(System.in);
+                        int indeksik1 = indeks1.nextInt();
+                        studenci.UsunDane(indeks1);
+                        break;
+                        
+                    case 5:
+                        System.out.println("Podaj indeks");
+                        Scanner indeks2 = new Scanner(System.in);
+                        int indeksik2 = indeks2.nextInt();
+                        studenci.WyswietlDane(indeksik2);
+                        break;
+                        
+                    case 6:
+                        studenci.WyswietlWszystkieDane();
+                        break;
+                        
+                    case 7:
+                        System.out.println("Podaj indeks poczatkowy");
+                        Scanner indeksPocz = new Scanner(System.in);
+                        
+                        System.out.println("Podaj indeks koncowy");
+                        Scanner indeksKon = new Scanner(System.in);
+                        studenci.WyswietlZakres(indeksPocz, indeksKon);
+                        break;
+                        
+                    case 8:
+                        petla = false;
+                        break;
+                     
+                }
+            }
+                
+            }
+                
                
                
     } 
