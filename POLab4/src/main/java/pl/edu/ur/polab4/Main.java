@@ -143,46 +143,70 @@ public class Main {
                         System.out.println("Podaj indeks");
                         Scanner indeks = new Scanner(System.in);
                         int j = indeks.nextInt();
+                        
                         System.out.println("Podaj imie");
                         Scanner imie = new Scanner(System.in);
+                        String imie1 = imie.next();
+                        
                         System.out.println("Podaj nazwisko");
                         Scanner nazwisko = new Scanner(System.in);
+                        String nazwisko1 = nazwisko.next();
+                        
                         System.out.println("Podaj nr indeksu");
                         Scanner numerIndeksu = new Scanner(System.in);
+                        int numerIndeksu1 = numerIndeksu.nextInt();
+                        
                         System.out.println("Podaj nazwe specjalnosci");
                         Scanner nazwaSpecjalnosci = new Scanner(System.in);
+                        String nazwaSpecjalnosci1 = nazwaSpecjalnosci.next();
+                        
                         System.out.println("Podaj rok studiow");
                         Scanner rokStudiow = new Scanner(System.in);
-                        studenci.DodajStudenta(j, new Student(imie, nazwisko, numerIndeksu, nazwaSpecjalnosci, rokStudiow));
+                        int rokStudiow1 = rokStudiow.nextInt();
+                        
+                        studenci.DodajStudenta(j, new Student(imie1, nazwisko1, numerIndeksu1, nazwaSpecjalnosci1, rokStudiow1));
                         break;
                     case 3:
                         System.out.println("Podaj indeks");
                         Scanner in = new Scanner(System.in);
+                        int in1 = in.nextInt();
+                        
                         System.out.println("Podaj imie");
-                        Scanner imie1 = new Scanner(System.in);
+                        Scanner imie2 = new Scanner(System.in);
+                        String imie22 = imie2.next();
+                        
                         System.out.println("Podaj nazwisko");
-                        Scanner nazwisko1 = new Scanner(System.in);
+                        Scanner nazwisko2 = new Scanner(System.in);
+                        String nazwisko22 = nazwisko2.next();
+                        
                         System.out.println("Podaj nr indeksu");
-                        Scanner numerIndeksu1 = new Scanner(System.in);
+                        Scanner numerIndeksu2 = new Scanner(System.in);
+                        int numerIndeksu22 = numerIndeksu2.nextInt();
+                        
                         System.out.println("Podaj nazwe specjalnosci");
-                        Scanner nazwaSpecjalnosci1 = new Scanner(System.in);
+                        Scanner nazwaSpecjalnosci2 = new Scanner(System.in);
+                        String nazwaSpecjalnosci22 = nazwaSpecjalnosci2.next();
+                        
                         System.out.println("Podaj rok studiow");
-                        Scanner rokStudiow1 = new Scanner(System.in);
-                        studenci.EdycjaDanych(in, new Student(imie1, nazwisko1, numerIndeksu1, nazwaSpecjalnosci1, rokStudiow1));
+                        Scanner rokStudiow2 = new Scanner(System.in);
+                        int rokStudiow22 = rokStudiow2.nextInt();
+                        
+                        
+                        studenci.EdycjaDanych(in1,imie22, nazwisko22, numerIndeksu22, nazwaSpecjalnosci22, rokStudiow22);
                         break;
                         
                     case 4:
                         System.out.println("Podaj indeks");
-                        Scanner indeks1 = new Scanner(System.in);
-                        int indeksik1 = indeks1.nextInt();
-                        studenci.UsunDane(indeks1);
+                        Scanner indeks2 = new Scanner(System.in);
+                        int indeks22 = indeks2.nextInt();
+                        studenci.UsunDane(indeks22);
                         break;
                         
                     case 5:
                         System.out.println("Podaj indeks");
-                        Scanner indeks2 = new Scanner(System.in);
-                        int indeksik2 = indeks2.nextInt();
-                        studenci.WyswietlDane(indeksik2);
+                        Scanner indeks3 = new Scanner(System.in);
+                        int indeks33 = indeks3.nextInt();
+                       studenci.WyswietlDane(indeks33);
                         break;
                         
                     case 6:
@@ -192,10 +216,13 @@ public class Main {
                     case 7:
                         System.out.println("Podaj indeks poczatkowy");
                         Scanner indeksPocz = new Scanner(System.in);
+                        int indeksPocz1 = indeksPocz.nextInt();
                         
                         System.out.println("Podaj indeks koncowy");
                         Scanner indeksKon = new Scanner(System.in);
-                        studenci.WyswietlZakres(indeksPocz, indeksKon);
+                        int indeksKon1 = indeksKon.nextInt();
+                        
+                        studenci.WyswietlZakres(indeksPocz1, indeksKon1);
                         break;
                         
                     case 8:

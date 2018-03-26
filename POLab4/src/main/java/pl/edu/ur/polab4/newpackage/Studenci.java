@@ -5,7 +5,6 @@
  */
 package pl.edu.ur.polab4.newpackage;
 
-import java.util.Scanner;
 import pl.edu.ur.polab4.Student;
 
 /**
@@ -35,6 +34,7 @@ public class Studenci {
         tablica[indeks] = student;
     }
     
+   
     public void EdycjaDanych(int indeks, String imie, String nazwisko,  int nrIndeksu, String nazwaSpec, int rokStud){
         if(indeks<0 || indeks>100){
             System.out.println("Niepoprawny indeks tablicy");
@@ -74,6 +74,7 @@ public class Studenci {
         int i;
         for(i=0;i<100;i++){
             this.WyswietlDane(i);
+            System.out.println("\n");
         }
     }
     
@@ -97,20 +98,8 @@ public class Studenci {
            
 }
 
-    public void WyswietlDane(Scanner indeks2) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 
-    public void UsunDane(Scanner indeks1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void EdycjaDanych(Scanner in, Student student) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void WyswietlZakres(Scanner indeksPocz, Scanner indeksKon) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 }
 
